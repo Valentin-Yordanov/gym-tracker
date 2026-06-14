@@ -48,7 +48,7 @@ td:nth-child(2), td:nth-child(3) {
 /* Rest days */
 .rest-cell {
     text-align: center !important;
-    color: #555;
+    color: #087996;
     font-style: italic;
 }
 
