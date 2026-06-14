@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f9f9f9;
+    font-family: Calibri, Arial, sans-serif;
+    margin: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
 }
 
 .table-container {
@@ -13,29 +14,47 @@ body {
 
 table {
     border-collapse: collapse;
-    background-color: white;
-    min-width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px; /* Keeps it readable on larger screens */
 }
 
 th, td {
     border: 1px solid #d4d4d4;
-    padding: 8px 12px;
+    padding: 8px;
     text-align: left;
 }
 
+/* Black headers with white text */
 th {
-    background-color: #f3f3f3;
+    background-color: #000000;
+    color: #ffffff;
     font-weight: bold;
+    text-align: center;
 }
 
-.header-row td {
-    background-color: #e2efda; /* Excel green tint */
+/* Gray day separators */
+.day-row td {
+    background-color: #d9d9d9;
     font-weight: bold;
+    color: #000000;
+}
+
+/* Center the numbers in the weight columns */
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+    width: 25%;
+}
+
+/* Rest days */
+.rest-cell {
+    text-align: center !important;
+    color: #555;
+    font-style: italic;
 }
 
 /* Highlight editable cells when tapped */
 td[contenteditable="true"]:focus {
-    outline: 2px solid #217346; /* Excel green border */
+    outline: 2px solid #217346; 
     background-color: #f0f8ff;
 }
+
