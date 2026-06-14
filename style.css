@@ -64,6 +64,8 @@ th {
   font-weight: bold;
   color: #000000;
 }
+
+
 /* Center the numbers in the weight columns */
 td:nth-child(2),
 td:nth-child(3) {
