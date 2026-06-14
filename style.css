@@ -1,60 +1,85 @@
 body {
-    font-family: Calibri, Arial, sans-serif;
-    margin: 10px;
-    background-color: #ffffff;
-    font-size: 14px;
+  font-family: Calibri, Arial, sans-serif;
+  margin: 10px;
+  background-color: #ffffff;
+  font-size: 14px;
 }
 
 .table-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 500px; /* Keeps it readable on larger screens */
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px; /* Keeps it readable on larger screens */
 }
 
-th, td {
-    border: 1px solid #d4d4d4;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #d4d4d4;
+  padding: 8px;
+  text-align: left;
 }
 
 /* Black headers with white text */
 th {
-    background-color: #360303;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
+  background-color: #220101;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Gray day separators */
-.day-row td {
-    background-color: #087996;
-    font-weight: bold;
-    color: #000000;
+.day-row1 td {
+  background-color: #47041e;
+  font-weight: bold;
+  color: #000000;
 }
-
+.day-row2 td {
+  background-color: #054d47;
+  font-weight: bold;
+  color: #000000;
+}
+.day-row3 td {
+  background-color: #033005;
+  font-weight: bold;
+  color: #000000;
+}
+.day-row4 td {
+  background-color: #720c05;
+  font-weight: bold;
+  color: #000000;
+}
+.day-row5 td {
+  background-color: #3a0896;
+  font-weight: bold;
+  color: #000000;
+}
+.day-row6 td {
+  background-color: #087996;
+  font-weight: bold;
+  color: #000000;
+}
 /* Center the numbers in the weight columns */
-td:nth-child(2), td:nth-child(3) {
-    text-align: center;
-    width: 25%;
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+  width: 25%;
 }
 
 /* Rest days */
 .rest-cell {
-    text-align: center !important;
-    color: #087996;
-    font-style: italic;
+  text-align: center !important;
+  color: #087996;
+  font-style: italic;
 }
 
 /* Highlight editable cells when tapped */
 td[contenteditable="true"]:focus {
-    outline: 2px solid #217346; 
-    background-color: #f0f8ff;
+  outline: 2px solid #217346;
+  background-color: #f0f8ff;
 }
-
