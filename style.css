@@ -26,7 +26,7 @@ th, td {
 
 /* Black headers with white text */
 th {
-    background-color: #000000;
+    background-color: #360303;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -34,7 +34,7 @@ th {
 
 /* Gray day separators */
 .day-row td {
-    background-color: #d9d9d9;
+    background-color: #087996;
     font-weight: bold;
     color: #000000;
 }
