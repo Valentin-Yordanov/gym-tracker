@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table-container">
+        <table id="gym-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>1 set (kg)</th>
+                    <th>3 set (kg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="header-row"><td colspan="3">Day 1: Upper</td></tr>
+                <tr><td>Bench Press (Barbell)</td><td contenteditable="true" data-id="bench-1">50</td><td contenteditable="true" data-id="bench-3">60</td></tr>
+                <tr><td>Lat Pulldown (Cable)</td><td contenteditable="true" data-id="lat-1">61</td><td contenteditable="true" data-id="lat-3">77</td></tr>
+                <tr><td>Incline Bench Press</td><td contenteditable="true" data-id="inc-1">17.5</td><td contenteditable="true" data-id="inc-3">22.5</td></tr>
+                <tr><td>T-Bar Row</td><td contenteditable="true" data-id="tbar-1">30</td><td contenteditable="true" data-id="tbar-3">40</td></tr>
+                <tr><td>Shoulder Press (Dumbbell)</td><td contenteditable="true" data-id="sh-1">15</td><td contenteditable="true" data-id="sh-3">20</td></tr>
+                
+                <tr class="header-row"><td colspan="3">Day 2: Lower</td></tr>
+                <tr><td>Squats</td><td contenteditable="true" data-id="sq-1">60</td><td contenteditable="true" data-id="sq-3">80</td></tr>
+                <tr><td>Leg Press</td><td contenteditable="true" data-id="lp-1">80</td><td contenteditable="true" data-id="lp-3">140</td></tr>
+                <tr><td>Seated Leg Curls</td><td contenteditable="true" data-id="lc-1">30</td><td contenteditable="true" data-id="lc-3">40</td></tr>
+                <tr><td>Calf Raises</td><td contenteditable="true" data-id="calf-1">53</td><td contenteditable="true" data-id="calf-3">61</td></tr>
+                
+                <tr class="header-row"><td colspan="3">Day 3: Rest</td></tr>
+            </tbody>
+        </table>
+
+        <table id="iso-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>1 set (kg)</th>
+                    <th>3 set (kg)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="header-row"><td colspan="3">Bicep Exercises</td></tr>
+                <tr><td>Cable Curl</td><td contenteditable="true" data-id="bc-1">20</td><td contenteditable="true" data-id="bc-3">25</td></tr>
+                <tr><td>Hammer Curl</td><td contenteditable="true" data-id="hc-1">12.5</td><td contenteditable="true" data-id="hc-3">15</td></tr>
+                <tr><td>Preacher Curl</td><td contenteditable="true" data-id="pc-1">7.5</td><td contenteditable="true" data-id="pc-3">10</td></tr>
+
+                <tr class="header-row"><td colspan="3">Triceps Exercises</td></tr>
+                <tr><td>Close-Grip Bench Press</td><td contenteditable="true" data-id="cg-1"></td><td contenteditable="true" data-id="cg-3"></td></tr>
+                <tr><td>EZ-Bar Skullcrushers</td><td contenteditable="true" data-id="sk-1"></td><td contenteditable="true" data-id="sk-3"></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
